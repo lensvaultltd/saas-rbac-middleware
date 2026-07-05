@@ -1,0 +1,10 @@
+{
+  "admin": {
+    "users": ["create", "read", "update", "delete"],
+    "billing": ["read", "update"]
+  },
+  "viewer": {
+    "users": ["read"],
+    "billing": []
+  }
+}

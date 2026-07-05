@@ -1,0 +1,8 @@
+{
+  "name": "saas-rbac-middleware",
+  "version": "1.0.0",
+  "main": "middleware.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
