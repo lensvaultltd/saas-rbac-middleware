@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  rbac-engine:
+    build: ./rbac-engine
+    ports:
+      - "8000:8000"
+
+  node-api:
+    build: ./node-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - rbac-engine
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "3000:3000"
+    depends_on:
+      - rbac-engine
